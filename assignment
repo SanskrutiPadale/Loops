@@ -1,0 +1,114 @@
+print ("Break and continue Statement in While loop")
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+
+print("Continue Statement")
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+  
+  print ("Break and Continue statement in for loop ")
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+  
+  # Python 3.x code to demonstrate star pattern
+ 
+# Function to demonstrate printing pattern triangle
+def triangle(n):
+     
+    # number of spaces
+    k = n - 1
+ 
+    # outer loop to handle number of rows
+    for i in range(0, n):
+     
+        # inner loop to handle number spaces
+        # values changing acc. to requirement
+        for j in range(0, k):
+            print(end=" ")
+     
+        # decrementing k after each loop
+        k = k - 1
+     
+        # inner loop to handle number of columns
+        # values changing acc. to outer loop
+        for j in range(0, i+1):
+         
+            # printing stars
+            print("* ", end="")
+     
+        # ending line after each row
+        print("\r")
+ 
+# Driver Code
+n = 5
+triangle(n)
+
+thisdict1 =	{
+  "Book name": "Harry Potter",
+  "type": "Fiction",
+  "year": 2001,
+  "year": 2020
+  
+}
+print(thisdict1)
+print(thisdict1["Book name"])
+print(len(thisdict1))
+x = thisdict1["type"]
+print (x)
+
+x = thisdict1.keys()
+
+print(x)
+
+x = thisdict1.get("type")
+print(x)
+
+thisdict1.update({"year": 2021})
+
+print(thisdict1)
+
+thisdict1.pop("type")
+print(thisdict1)
+
+for x, y in thisdict1.items():
+  print(x, y)
+
+mydict = dict(thisdict1)
+print(mydict)
+
+child1 = {
+  "name" : "kruti",
+  "year" : 2004
+}
+child2 = {
+  "name" : "shruti",
+  "year" : 2007
+}
+child3 = {
+  "name" : "smruti",
+  "year" : 2011
+}
+
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
+print(myfamily)
